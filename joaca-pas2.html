@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='ro' lang='ro'>
+<head>
+<title>Razboiul Robotilor - Echipa 13 - Joaca</title>
+<meta name='keywords' content='roboti, razboi, razboiul robotilor' />
+<meta name='description' content='Razboiul Robotilor este un joc de societate realizat de: Alin Musat, Cristian Epure, Bogdan Olaru, Sorin Miroiu si Catalin Marinescu.' />
+<meta name='copyright' content='Echipa 13 @ Facultatea de Matematica si Informatica - Universitatea din Bucuresti ' />
+<meta http-equiv='Content-Language' content='ro' />
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<meta name='googlebot' content='index, follow' />
+<meta name='robots' content='index, follow' />
+<meta name='revisit-after' content='7 days' />
+<link href='css/stil.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<div id="banner">
+     <img src="imagini/banner.png" alt="Razboiul Robotilor" />
+   </div><!-- / banner -->
+<div id="continut">
+
+  <div id="parteaDeSus">
+   <div id="meniuContainer">
+    <ul class='meniu' rel="sam1">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contulmeu.html">Contul meu</a></li>
+      <li class="activ"><a href="joaca.html">Joaca</a></li>
+      <li><a href="clasament.html">Clasament</a></li>
+      <li><a href="despre.html">Despre joc</a></li>
+    </ul>
+   </div> <!-- / meniuContainer -->
+   
+   <div id="logare">
+   <!-- // user nelogat -->
+   <form action="" method="post">
+    <div class='userparola'>
+    <span class="utilizator">Utilizator :</span> <input type="text" name="utilizator" class="campDeDate"><br />
+    <span class="parola">Parola :</span> <input type="password" name="parola" class="campDeDate">
+    </div><!-- / userparola -->
+    <input type="submit" value="Login" class="login">
+   </form> 
+ <span class="nuAiCont">Nu ai cont? <a href="cont-nou.html">Inregistreaza-te acum!</a></span> 
+ 
+ 
+ <!-- user logat -->
+ <!--
+ <span class="userLogat">Bine ai revenit, <a href="#" title="link catre profil">Cristi</a>!<br />
+ <span class="statisticaSus">Loc ocupat in clasament: </span> 1<br />
+  <span class="statisticaSus">Numar puncte obtinute: </span> 1000<br /> -->
+       </div> <!-- / logare -->
+       </div> <!-- / parteaDeSus -->
+ 
+ 
+   
+  
+  
+  
+  
+  <div id="parteaStanga">
+       <div class="primaPagina">
+          <h1 class='titluStanga'>Razboiul Robotilor - Joaca</h1>
+          
+          <!-- pentru user nelogat
+          <p>Salut vizitatorule! Pentru a putea accesa informatiile de pe aceasta pagina este nevoie sa te loghezi!<br /> -->
+          
+          <!-- pentru user logat -->
+          
+          <h3>Alege-ti Adversarul</h3>
+          <div class="alegeLupta">
+         <form action="joaca-pasFinal.html" method="post">    
+         <input type="text" name="Friend" class="vsPrieten" value="Nume Prieten" onclick="this.value='';">
+         <input type="submit" class="tipLupta" value="VS Prieten">
+         </form>
+         
+         <form action="joaca-pasFinal.html" method="post">    
+         <input type="hidden" name="FightPC">
+         <input type="submit" class="tipLupta" value="VS PC">
+         </form>
+         
+         <form action="joaca-pasFinal.html" method="post">    
+         <input type="hidden" name="aleator">
+         <input type="submit" class="tipLupta" value="Aleator (random)">
+         </form>
+         
+         </div>
+          
+          
+         
+         
+          
+          
+          
+          
+       
+       
+       </div><!-- / primaPagina -->
+  </div><!-- / parteaStanga -->
+  
+  <div id="parteaDreapta">
+    <div class="top10">
+      <h2 class='titluDreapta'>Top 10 Jucători</h2>
+      
+      <ul>
+        <li class="titluClasament">
+         <span class="nr">#</span>
+         <span class="nume">Jucător</span>
+         <span class="puncte">Puncte</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">1.</span>
+         <span class="nume">Cristi</span>
+         <span class="puncte">1000</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">2.</span>
+         <span class="nume">Alin</span>
+         <span class="puncte">890</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">3.</span>
+         <span class="nume">Catalin</span>
+         <span class="puncte">575</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">4.</span>
+         <span class="nume">Bogdan</span>
+         <span class="puncte">482</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">5.</span>
+         <span class="nume">Mihai</span>
+         <span class="puncte">392</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">6.</span>
+         <span class="nume">George</span>
+         <span class="puncte">370</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">7.</span>
+         <span class="nume">Cristina</span>
+         <span class="puncte">220</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">8.</span>
+         <span class="nume">Emil</span>
+         <span class="puncte">175</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">9.</span>
+         <span class="nume">Andrei</span>
+         <span class="puncte">90</span>
+        </li>
+        <li class='jucator'>
+         <span class="nr">10.</span>
+         <span class="nume">Sorin</span>
+         <span class="puncte">12</span>
+        </li>
+      </ul>
+      <a href="clasament.html">[vezi întregul clasament]</a>
+    </div> <!-- / top10 -->
+    
+    <div class="noutati">
+     <h2 class='titluDreapta'>Ştiri, Anunţuri &amp; Noutăţi</h2>
+     <!-- de preferat stirile vor fi preluate din baza de date si nu introduse manual pe fiecare pagina :) -->
+     <p><span class="data">01.01.2014</span> - La mulţi ani 2014!</p>
+     <p><span class="data">27.12.2013</span> - La mulţi ani Ştefan şi în special Ştefania!</p>
+     <p><span class="data">25.12.2013</span> - Crăciun fericit!</p>
+     <p><span class="data">15.12.2013</span> - După realizarea mockup-ului s-a trecut la realizarea design-ului propriu-zis.</p>
+     <p><span class="data">03.12.2013</span> - S-a început lucrul la joc, prin repartizarea sarcinilor membrilor echipei, de la cod la design.</p>
+    
+    </div> <!-- / noutati -->
+    
+    <div class="echipa">
+     <h2 class='titluDreapta'>Echipa 13</h2>
+     <p>
+     <span class="developer">Alin Muşat</span> - Cloud Computing<br />
+     <span class="developer">Cristian Epure</span> - Designer<br />
+     <span class="developer">Bogdan Olaru</span> - Designer<br />
+     <span class="developer">Sorin Miroiu</span> - Baza de date<br />
+     <span class="developer">Cătălin Marinescu</span> - Coder<br />
+     </p>
+    
+    </div> <!-- / echipa -->
+    
+  </div><!-- / parteaStanga -->
+  
+  <div class="curata">&nbsp;</div>
+   <div id="parteaDeJos">
+   Copyright &copy; Echipa 13
+   </div>
+</div> <!-- / continut -->
+
+
+
+</body>
+</html>
