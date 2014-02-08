@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="IPGame.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="IPGame">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=portalvhdsdg3s9kw1mp3b3;AccountKey=rW3n1CGUWtt4rYxWtfIdSD67C43ALtWEcVkP1p/XWC8ZKoQH4stdwcioBT0vVYNYXE+Z/GcpuXtbD9/PxmtJqg==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

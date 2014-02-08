@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "WindowsAzure5", "WindowsAzure5\WindowsAzure5.ccproj", "{EE725B78-0DD3-470C-A645-F6850AF9CA4C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WCFServiceWebRole1", "WCFServiceWebRole1\WCFServiceWebRole1.vbproj", "{5C6645D1-934F-4468-A637-8F3919466791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE725B78-0DD3-470C-A645-F6850AF9CA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE725B78-0DD3-470C-A645-F6850AF9CA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE725B78-0DD3-470C-A645-F6850AF9CA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE725B78-0DD3-470C-A645-F6850AF9CA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6645D1-934F-4468-A637-8F3919466791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6645D1-934F-4468-A637-8F3919466791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6645D1-934F-4468-A637-8F3919466791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6645D1-934F-4468-A637-8F3919466791}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ipgame.cloudapp.net/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ipgame.cloudapp.net/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ipgame.cloudapp.net/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_CheckLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Top10_InputMessage">
+    <wsdl:part name="parameters" element="tns:Top10" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Top10_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Top10Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Rank_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rank" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Rank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Scor_InputMessage">
+    <wsdl:part name="parameters" element="tns:Scor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Scor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UserNou_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserNou" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UserNou_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserNouResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clasament_InputMessage">
+    <wsdl:part name="parameters" element="tns:Clasament" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clasament_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClasamentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clasamentusr_InputMessage">
+    <wsdl:part name="parameters" element="tns:Clasamentusr" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clasamentusr_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClasamentusrResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UserHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserHistory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UserHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EndGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndGame" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EndGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EndGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChampData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChampData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChampData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChampDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChampName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChampName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChampName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChampNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BotFight_InputMessage">
+    <wsdl:part name="parameters" element="tns:BotFight" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BotFight_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BotFightResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="CheckLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckLogin" message="tns:IService1_CheckLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckLoginResponse" message="tns:IService1_CheckLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Top10">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Top10" message="tns:IService1_Top10_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Top10Response" message="tns:IService1_Top10_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Rank" message="tns:IService1_Rank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RankResponse" message="tns:IService1_Rank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Scor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Scor" message="tns:IService1_Scor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ScorResponse" message="tns:IService1_Scor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserNou">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UserNou" message="tns:IService1_UserNou_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UserNouResponse" message="tns:IService1_UserNou_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Clasament">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Clasament" message="tns:IService1_Clasament_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ClasamentResponse" message="tns:IService1_Clasament_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Clasamentusr">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Clasamentusr" message="tns:IService1_Clasamentusr_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ClasamentusrResponse" message="tns:IService1_Clasamentusr_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UserHistory" message="tns:IService1_UserHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UserHistoryResponse" message="tns:IService1_UserHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EndGame" message="tns:IService1_EndGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EndGameResponse" message="tns:IService1_EndGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChampData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChampData" message="tns:IService1_ChampData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChampDataResponse" message="tns:IService1_ChampData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChampName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChampName" message="tns:IService1_ChampName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChampNameResponse" message="tns:IService1_ChampName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BotFight">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BotFight" message="tns:IService1_BotFight_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BotFightResponse" message="tns:IService1_BotFight_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Top10">
+      <soap:operation soapAction="http://tempuri.org/IService1/Top10" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rank">
+      <soap:operation soapAction="http://tempuri.org/IService1/Rank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Scor">
+      <soap:operation soapAction="http://tempuri.org/IService1/Scor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserNou">
+      <soap:operation soapAction="http://tempuri.org/IService1/UserNou" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clasament">
+      <soap:operation soapAction="http://tempuri.org/IService1/Clasament" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clasamentusr">
+      <soap:operation soapAction="http://tempuri.org/IService1/Clasamentusr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserHistory">
+      <soap:operation soapAction="http://tempuri.org/IService1/UserHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndGame">
+      <soap:operation soapAction="http://tempuri.org/IService1/EndGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChampData">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChampData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChampName">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChampName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BotFight">
+      <soap:operation soapAction="http://tempuri.org/IService1/BotFight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://ipgame.cloudapp.net/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
