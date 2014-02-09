@@ -17,7 +17,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select * from UserLogin('" + a + "','" + b + "')", con)
         result = c.ExecuteScalar
         Return result
@@ -34,7 +41,16 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
+
+
         Dim c As New SqlClient.SqlCommand("Select * from top10()", con)
         Dim d As SqlClient.SqlDataReader = c.ExecuteReader()
         Dim i As Integer = 0
@@ -59,7 +75,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select * from GetRank('" + user + "')", con)
         result = c.ExecuteScalar
         Return result
@@ -76,7 +99,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select * from GetScore('" + user + "')", con)
         result = c.ExecuteScalar
         Return result
@@ -92,7 +122,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("EXEC NEWUSER '" + user + "','" + pass + "','" + email + "'", con)
         Try
             result = c.ExecuteNonQuery
@@ -113,7 +150,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("select * from ranking", con)
         Dim d As SqlClient.SqlDataReader = c.ExecuteReader()
         Dim i As Integer = 0
@@ -143,7 +187,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select * from ranking where username='" + user + "'", con)
         Dim d As SqlClient.SqlDataReader = c.ExecuteReader()
         Dim a As New CompositeType2
@@ -166,7 +217,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select * from UHist('" + user + "')", con)
         Dim d As SqlClient.SqlDataReader = c.ExecuteReader()
         Dim i As Integer = 0
@@ -208,7 +266,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("EXEC ENDOFGAME '" + user1 + "','" + user2 + "','" + char1.ToString + "','" + char2.ToString + "','" + victor.ToString + "'", con)
         Try
             result = c.ExecuteNonQuery
@@ -228,7 +293,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select Mof1, Mof2, Mof3, Mdef1, Mdef2, Mdef3 from Personaje where ID=" + d.ToString, con)
         Dim a As New CompositeType4
         Dim b As SqlClient.SqlDataReader = c.ExecuteReader()
@@ -261,7 +333,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select Nume from Personaje where ID=" + d.ToString, con)
         Dim k As String = c.ExecuteScalar
 
@@ -283,7 +362,14 @@ Public Class Service1
         ab.UserID = "usr"
         ab.Password = "IPGame12"
         Dim con As New SqlClient.SqlConnection(ab.ToString)
-        con.Open()
+        Do
+            Try
+                con.Open()
+            Catch ex As Exception
+
+            End Try
+
+        Loop Until con.State = ConnectionState.Open
         Dim c As New SqlClient.SqlCommand("Select Mof1, Mof2, Mof3, Mdef1, Mdef2, Mdef3 from Personaje where Nume='" + myrobot + "'", con)
         Dim b As SqlClient.SqlDataReader = c.ExecuteReader
 
